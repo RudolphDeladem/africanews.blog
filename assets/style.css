@@ -83,6 +83,14 @@ img { max-width: 100%; height: auto; display: block; }
   background: var(--accent); color: var(--accent-ink); padding: 9px 16px;
   border-radius: 3px; text-decoration: none;
 }
+.more-stories { padding: 32px 0; border-bottom: 1px solid var(--rule); }
+.more-stories > h2 { font-family: var(--sans); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 18px; }
+.story { display: grid; grid-template-columns: 260px 1fr; gap: 24px; align-items: start; }
+.story img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 4px; }
+.story h3 { font-size: 1.4rem; line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 8px; text-wrap: balance; }
+.story h3 a { color: var(--ink); text-decoration: none; }
+.story h3 a:hover { text-decoration: underline; }
+.story p { margin: 0 0 8px; color: var(--muted); }
 .home-note { padding: 32px 0 48px; color: var(--muted); max-width: 720px; }
 .home-note h2 { font-size: 1.1rem; color: var(--ink); margin: 0 0 6px; }
 
@@ -125,6 +133,7 @@ thead th { border-bottom: 2px solid var(--ink); white-space: nowrap; }
   body { font-size: 18px; }
   .lead-story { grid-template-columns: 1fr; gap: 20px; padding: 24px 0; }
   .lead-story h1 { font-size: 1.8rem; }
+  .story { grid-template-columns: 1fr; gap: 14px; }
   article h1 { font-size: 1.95rem; }
   .standfirst { font-size: 1.1rem; }
   .facts dl { grid-template-columns: 1fr; gap: 0; }
