@@ -48,14 +48,16 @@ img { max-width: 100%; height: auto; display: block; }
 /* Masthead */
 .masthead { border-bottom: 3px double var(--rule); background: var(--surface); }
 .masthead .wrap {
-  display: flex; flex-wrap: wrap; align-items: baseline;
+  display: flex; flex-wrap: wrap; align-items: center;
   justify-content: space-between; gap: 6px 24px; padding-top: 18px; padding-bottom: 14px;
 }
 .wordmark {
+  display: inline-flex; align-items: center;
   font-family: var(--serif); font-weight: 700; font-size: 1.7rem;
   letter-spacing: -0.02em; color: var(--ink); text-decoration: none;
 }
 .wordmark span { color: var(--accent); }
+.logo-mark { width: 36px; height: 36px; flex: none; border-radius: 8px; margin-right: 10px; }
 .tagline, .dateline {
   font-family: var(--sans); font-size: 0.78rem; color: var(--muted);
   text-transform: uppercase; letter-spacing: 0.08em;
@@ -132,6 +134,7 @@ thead th { border-bottom: 2px solid var(--ink); white-space: nowrap; }
 
 @media (max-width: 760px) {
   body { font-size: 18px; }
+  .logo-mark { width: 30px; height: 30px; }
   .lead-story { grid-template-columns: 1fr; gap: 20px; padding: 24px 0; }
   .lead-story h1 { font-size: 1.8rem; }
   .story { grid-template-columns: 1fr; gap: 14px; }
